@@ -3,6 +3,7 @@ import { useStudyPlan } from "@/context/StudyPlanContext";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import moment from "moment-jalaali";
+import styles from "./DatePicker.module.css"
 
 const CustomDatePicker = () => {
    const { setStartDate } = useStudyPlan();
@@ -14,13 +15,12 @@ const CustomDatePicker = () => {
    };
 
    return (
-      <div>
-         <p>Select your start date:</p>
-         <DatePicker
+      <div className={styles.container}>
+         <p className={styles.title}>Select your start date:</p>
+         <DatePicker className={styles.calendar}
             selected={new Date()}
             onChange={handleDateChange}
             dateFormat="yyyy/MM/dd"
-            className="border p-2 rounded"
          />
       </div>
    );
