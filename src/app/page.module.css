@@ -146,7 +146,7 @@
                gap: 10px;
 
                
-               & p {
+               & .book, & .pages {
                   font: 10px arial;
                   text-align: center;
                   display: flex;

@@ -14,12 +14,14 @@ const StudyPlan = () => {
    const [persianDate, setPersianDate] = useState("");
    const [info, setInfo] = useState([]);
    const [watch, setWatch] = useState(false);
-   const [time, setTime] = useState()
+   const [time, setTime] = useState();
+   const [done,setDone] = useState([])
 
-   const [done, setDone] = useState(() => {
+   useEffect(() => {
       const saved = localStorage.getItem('doneTasks');
-      return saved ? JSON.parse(saved) : [];
-   });
+      setDone(saved ? JSON.parse(saved) : []);
+   }, [])
+
 
    useEffect(() => {
       setInfo([
@@ -722,7 +724,7 @@ const StudyPlan = () => {
             book: "Word Skills Intermediate",
             pages: [],
             instructions: []
-         },
+         }
       ])
    }, [])
 
@@ -787,6 +789,7 @@ const StudyPlan = () => {
    const baseDate = moment(startDate, "jYYYY/jMM/jDD").add(currentDay - 1, "days");
    const displayedDate = baseDate.format("jYYYY/jMM/jDD");
 
+
    return (
       <div className={styles.bigMom}>
          <div className={styles.holder}>
@@ -801,7 +804,7 @@ const StudyPlan = () => {
                   <>
                      <div className={styles.picHolder} onClick={showPic}>
                         {
-                           info[currentDay - 1].images.map((img, index) => (
+                           info[currentDay - 1]?.images?.map((img, index) => (
                               <div className={styles.picFrame} key={index}>
                                  <Image className={styles.pics}
                                     src={img}
