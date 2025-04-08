@@ -792,6 +792,11 @@ const StudyPlan = () => {
 
    return (
       <div className={styles.bigMom}>
+         <Image className={styles.back}
+            src={'/images/back/mainBack.png'}
+            alt="book"
+            fill
+         />
          <div className={styles.holder}>
 
             <p className={styles.title}>Today is: {persianDate}</p>
@@ -835,7 +840,8 @@ const StudyPlan = () => {
                               >
                                  {task}
                                  {
-                                    done.some((task) => task.day === currentDay && task.index === index) ? (
+                                    done.length > 0 &&
+                                    done.some((task) => task.day == currentDay && task.index == index) ? (
                                        <div className={styles.done}>Done!</div> 
                                     )  : null
                                  }
