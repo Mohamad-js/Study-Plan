@@ -60,11 +60,19 @@
    flex-direction: column;
    background-color: white;
    padding: 10px;
+   padding-top: env(safe-area-inset-top);
+   padding-bottom: env(safe-area-inset-bottom);
+   padding-left: env(safe-area-inset-left);
+   padding-right: env(safe-area-inset-right);
 
 
    & .back {
-      width: 100%;
+      width: 130%;
+      height: 100vh;
       z-index: 0;
+      position: absolute;
+      top: 0;
+      
    }
 
 
@@ -72,34 +80,88 @@
       width: 100%;
       height: 100%;
       padding: 10px;
-      border: 3px solid white;
       z-index: 1;
       border-radius: 20px;
       display: flex;
       align-items: center;
-      justify-content: start;
+      justify-content: flex-start;
       gap: 10px;
       flex-direction: column;
-   
-   
-      & .title {
-         position: relative;
+
+      & .dates {
          width: 100%;
-         height: 40px;
-         background-color: #ffffff;
-         color: rgb(0, 0, 0);
+         height: 7%;
          display: flex;
+         padding-left: 10px;
+         justify-content: space-between;
          align-items: center;
-         justify-content: center;
          border-radius: 10px;
+         background-color: rgb(255, 255, 255);
+         
+
+
+         & .date {
+            color: rgb(0, 0, 0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+         }
+
+         & .menuHolder {
+            width: 10%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+
+            & .dotHolder {
+               padding: 10px;
+               display: flex;
+               align-items: center;
+
+
+               & .hamIcon {
+                  font-size: 20px;
+                  color: rgb(0, 0, 0);
+               }
+            }
+
+
+
+            & .menu {
+               position: absolute;
+               top: 10px;
+               right: 40px;
+               z-index: 2;
+               font-size: 13px;
+               width: 100px;
+               height: fit-content;
+               background-color: white;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               flex-direction: column;
+               border-radius: 10px;
+               box-shadow: 1px 1px 10px 0px black;
+               overflow: hidden;
+
+               & .item {
+                  padding: 10px;
+                  width: 100%;
+                  text-align: center;
+
+                  &:active {
+                     background-color: rgb(247, 247, 247);
+                  }
+               }
+            }
+         }
+
       }
-
-
-
-      & .date {
-         width: 100%;
-         text-align: center;
-      }
+   
+   
 
 
       & .check {
@@ -122,8 +184,12 @@
       & .picHolder {
          position: relative;
          width: 100%;
-         height: 180px;
+         min-width: 100%;
+         height: 30%;
          border-radius: 10px;
+         align-items: center;
+         justify-content: center;
+         display: block;
          display: flex;
          padding: 10px;
          gap: 10px;
@@ -131,27 +197,33 @@
 
          & .picFrame {
             position: relative;
-            width: 100px;
-            height: 160px;
+            width: fit-content;
+            height: 150px;
             display: flex;
-            justify-content: center;
+            border-radius: 10px;
+            justify-content: end;
             align-items: center;
+            flex-direction: column;
+            overflow: hidden;
 
             
             & .pics {
-               object-fit: cover;
+               position: relative;
+               object-fit: contain;
             }
 
             & .infoLayer {
+               position: relative;
                width: 100%;
-               height: 100%;
-               background-color: rgba(0, 0, 0, 0.5);
+               height: 40px;
+               padding: 5px;
+               border-radius: 10px;
+               background-color: rgba(0, 0, 0, 0.616);
                z-index: 1;
                display: flex;
                align-items: center;
                justify-content: center;
                flex-direction: column;
-               gap: 10px;
 
                
                & .book, & .pages {
@@ -166,45 +238,154 @@
       }
 
       & .tasks {
+         position: relative;
          width: 100%;
-         height: 50%;
+         height: 70%;
+         min-width: 100%;
          overflow-y: scroll;
          border-radius: 10px;
          padding: 10px;
          border: 1px solid rgb(255, 255, 255);
-         display: flex;
-         flex-direction: column;
          gap: 10px;
 
 
 
          & .task {
             position: relative;
+            text-align: justify;
+            margin-bottom: 5px;
+            overflow-y: hidden;
             width: 100%;
-            height: fit-content;
-            background-color: rgba(0, 0, 0, 0.459);
+            min-width: 100%;
+            height: 35px;
+            background-color: rgba(255, 255, 255, 0.459);
             border-radius: 10px;
             padding: 10px;
-            color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
             font: 13px arial;
             display: flex;
-            justify-content: center;
-            overflow: hidden;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 15px;
+            transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+            
+            & .top {
+               width: 100%;
+               min-width: 100%;
+               display: flex;
+               color: black;
+               justify-content: space-between;
+               
+               & .icon {
+                  font-size: 15px;
+                  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+               }
+
+               & .turn {
+                  rotate: 180deg;
+               }
+            }
+
+            & .todo {
+               width: 100%;
+               height: fit-content;
+            }
+
+            & .extra {
+
+               width: 100%;
+               min-width: 100%;
+
+               & a {
+                  text-decoration: underline;
+                  color: blue;
+               }
+
+               & .input {
+                  width: 100%;
+                  min-width: 100%;
+                  display: flex;
+                  justify-content: space-between;
+                  gap: 10px;
+
+
+                  & .textarea {
+                     width: 100%;
+                     height: 40px;
+                     resize: none;
+                     border-radius: 10px;
+                     background-color: black;
+                     color: white;
+                     padding: 7px;
+                     outline: none;
+                     border: 0.5px solid rgba(0, 0, 0, 0.2);
+   
+                     &:focus {
+                        border: 1px solid black;
+                     }
+                  }
+   
+                  & .save {
+                     padding: 5px 15px;
+                     border-radius: 10px;
+                     background-color: rgba(0, 0, 0, 0);
+                     border: 1px solid rgba(0, 0, 0, 0.2);
+                     
+                     
+                     &:active {
+                        border: none;
+                        background-color: black;
+                        color: white;
+                     }
+                  }
+               }
+
+               & .notes {
+                  display: flex;
+                  margin-top: 10px;
+                  width: 100%;
+                  min-width: 100%;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  gap: 5px;
+
+
+                  & .note {
+                     width: 100%;
+                     padding: 5px;
+                     border-radius: 5px;
+                     color: black;
+                     border: 1px black solid;
+                  }
+               }
+
+            }
 
 
             & .done {
                position: absolute;
                top: 0;
+               left: 0;
                width: 100%;
+               min-width: 100%;
                height: 100%;
                background-color: rgba(0, 0, 0, 0.7);
                display: flex;
                justify-content: center;
                align-items: center;
                color: white;
+               border-radius: 10px;
                font: 20px arial;
                font-weight: 700;
             }
+         }
+
+         & .open {
+            height: 200px;
+            background-color: white;
+            overflow-y: scroll;
+            color: rgb(65, 65, 65);
          }
       }
 
@@ -218,7 +399,7 @@
          border-radius: 10px;
          display: flex;
          justify-content: center;
-         align-items: start;
+         align-items: flex-start;
          padding: 10px;
          flex-wrap: wrap;
          gap: 5px;
@@ -230,23 +411,22 @@
             height: 50px;
             display: flex;
             align-items: center;
-            justify-content: center;
-            background-color: rgb(255, 255, 255);
-            color: black;
+            justify-content: flex-end;
 
             & .icon {
-               font-size: 25px;
-               margin-right: 10px;
-               color: black;
+               rotate: 180deg;
+               font-size: 50px;
+               color: white;
             }
          }
 
          & .picFrame2 {
             position: relative;
             width: 100vw;
-            height: 500px;
+            height: 400px;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            justify-content: flex-start;
             align-items: center;
             z-index: 2;
 
@@ -260,8 +440,10 @@
       
 
       & .buttonHolder {
+         position: relative;
          height: fit-content;
          width: 100%;
+         min-width: 100%;
          display: flex;
          justify-content: space-between;
          z-index: 1;
@@ -281,6 +463,56 @@
          }
       }
 
+   }
+
+   & .warning {
+      position: absolute;
+      top: 0;
+      z-index: 3;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.705);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 10px;
+
+
+      & .btns {
+         display: flex;
+         gap: 10px;
+
+
+         & button {
+            padding: 10px 30px;
+            border-radius: 10px;
+            outline: none;
+            border: none;
+            font-size: 17px;
+         }
+      }
+
+      & .delNotes {
+         width: 100%;
+         height: 50px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+
+
+         & .label {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+
+            & .checkbox {
+               width: 20px;
+            }
+         }
+      }
    }
 }
 
