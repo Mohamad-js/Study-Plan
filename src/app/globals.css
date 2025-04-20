@@ -3,6 +3,11 @@
    src: url('../../public/fonts/Vazir-Thin.ttf');
 }
 
+@font-face {
+   font-family: vazirb;
+   src: url('../../public/fonts/Vazir-Bold.ttf');
+}
+
 * {
   box-sizing: border-box;
   padding: 0;

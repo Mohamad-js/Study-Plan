@@ -18,15 +18,17 @@
 
 
    & .layer {
-      width: 300px;
-      height: 250px;
-      background-color: rgba(255, 255, 255, 0.3);
+      width: 30%;
+      min-width: 250px;
+      height: 15%;
+      min-height: 300px;
+      background-color: rgba(255, 255, 255, 0.4);
       border-radius: 20px;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: space-around;
       flex-direction: column;
-      gap: 80px;
+      z-index: 1;
       
       
       & .intro {
@@ -37,16 +39,25 @@
 
 
          & .title {
-            font: 20px tahoma;
+            font: 25px tahoma;
             font-weight: 600;
             margin-bottom: 10px;
          }
          
          
          & .welcome {
-            font: 15px arial;
+            font: 18px arial;
          }
       }
+   }
+
+   & .programmer {
+      position: absolute;
+      font: 20px arial;
+      height: 100vh;
+      display: flex;
+      align-items: flex-end;
+      padding-bottom: 50px;
    }
 }
 
@@ -58,12 +69,7 @@
    justify-content: center;
    align-items: center;
    flex-direction: column;
-   background-color: white;
-   padding: 10px;
-   padding-top: env(safe-area-inset-top);
-   padding-bottom: env(safe-area-inset-bottom);
-   padding-left: env(safe-area-inset-left);
-   padding-right: env(safe-area-inset-right);
+   padding: 20px;
 
 
    & .back {
@@ -90,9 +96,9 @@
 
       & .dates {
          width: 100%;
-         height: 7%;
+         height: 6%;
          display: flex;
-         padding-left: 10px;
+         padding-left: 30px;
          justify-content: space-between;
          align-items: center;
          border-radius: 10px;
@@ -106,6 +112,7 @@
             align-items: center;
             justify-content: center;
             border-radius: 10px;
+            font-size: 27px;
          }
 
          & .menuHolder {
@@ -117,13 +124,13 @@
 
 
             & .dotHolder {
-               padding: 10px;
+               padding: 20px;
                display: flex;
                align-items: center;
 
 
                & .hamIcon {
-                  font-size: 20px;
+                  font-size: 30px;
                   color: rgb(0, 0, 0);
                }
             }
@@ -132,11 +139,10 @@
 
             & .menu {
                position: absolute;
-               top: 10px;
-               right: 40px;
                z-index: 2;
-               font-size: 13px;
-               width: 100px;
+               top: 30px;
+               font-size: 18px;
+               width: 150px;
                height: fit-content;
                background-color: white;
                display: flex;
@@ -181,7 +187,7 @@
       }
          
          
-      & .picHolder {
+      & .picsHolder {
          position: relative;
          width: 100%;
          min-width: 100%;
@@ -189,34 +195,35 @@
          border-radius: 10px;
          align-items: center;
          justify-content: center;
-         display: block;
          display: flex;
          padding: 10px;
-         gap: 10px;
+         gap: 40px;
          background-color: rgba(255, 255, 255, 0.322);
+         overflow: hidden;
+
+
+
+
 
          & .picFrame {
             position: relative;
-            width: fit-content;
-            height: 150px;
+            width: 19vh;
+            height: fit-content;
             display: flex;
-            border-radius: 10px;
-            justify-content: end;
-            align-items: center;
-            flex-direction: column;
             overflow: hidden;
-
+            border-radius: 10px;
+            align-items: center;
+            justify-content: center;
+            
             
             & .pics {
-               position: relative;
-               object-fit: contain;
+               width: 100%;
             }
 
             & .infoLayer {
-               position: relative;
+               position: absolute;
                width: 100%;
-               height: 40px;
-               padding: 5px;
+               height: 80px;
                border-radius: 10px;
                background-color: rgba(0, 0, 0, 0.616);
                z-index: 1;
@@ -224,12 +231,13 @@
                align-items: center;
                justify-content: center;
                flex-direction: column;
-
+   
                
                & .book, & .pages {
-                  font: 10px arial;
+                  font: 20px arial;
                   text-align: center;
                   display: flex;
+                  align-items: center;
                   color: white;
                   gap: 5px;
                }
@@ -254,30 +262,45 @@
             position: relative;
             text-align: justify;
             margin-bottom: 5px;
+            padding: 0 20px 20px 20px;
             overflow-y: hidden;
+            scrollbar-width: none;
             width: 100%;
             min-width: 100%;
-            height: 35px;
-            background-color: rgba(255, 255, 255, 0.459);
+            height: 70px;
+            background-color: white;
             border-radius: 10px;
-            padding: 10px;
             color: rgb(0, 0, 0);
+            box-shadow: 1px 1px 5px 0px black;
             font: 13px arial;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
             gap: 15px;
             transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
             
             & .top {
+               position: sticky;
+               top: 0;
+               height: 70px;
+               background-color: white;
                width: 100%;
                min-width: 100%;
-               display: flex;
                color: black;
+               display: flex;
                justify-content: space-between;
+               align-items: center;
+               font: 20px serif;
+               font-weight: 1000;
+               transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+               
+
+               & .topic {
+                  width: 97%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+               }
                
                & .icon {
-                  font-size: 15px;
+                  font-size: 20px;
                   transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
                }
 
@@ -289,10 +312,11 @@
             & .todo {
                width: 100%;
                height: fit-content;
+               font: 20px arial;
+               margin: 20px 0px 40px 0px;
             }
 
             & .extra {
-
                width: 100%;
                min-width: 100%;
 
@@ -307,29 +331,31 @@
                   display: flex;
                   justify-content: space-between;
                   gap: 10px;
-
-
+                  
+                  
                   & .textarea {
                      width: 100%;
-                     height: 40px;
+                     height: 50px;
                      resize: none;
                      border-radius: 10px;
                      background-color: black;
                      color: white;
                      padding: 7px;
                      outline: none;
+                     font: 20px vazirl;
                      border: 0.5px solid rgba(0, 0, 0, 0.2);
    
                      &:focus {
                         border: 1px solid black;
                      }
                   }
-   
+                  
                   & .save {
                      padding: 5px 15px;
                      border-radius: 10px;
                      background-color: rgba(0, 0, 0, 0);
                      border: 1px solid rgba(0, 0, 0, 0.2);
+                     font: 20px arial;
                      
                      
                      &:active {
@@ -352,6 +378,7 @@
 
 
                   & .note {
+                     font: 20px vazirl;
                      width: 100%;
                      padding: 5px;
                      border-radius: 5px;
@@ -382,10 +409,9 @@
          }
 
          & .open {
-            height: 200px;
-            background-color: white;
-            overflow-y: scroll;
+            height: 300px;
             color: rgb(65, 65, 65);
+            overflow-y: auto;
          }
       }
 
@@ -400,41 +426,34 @@
          display: flex;
          justify-content: center;
          align-items: flex-start;
-         padding: 10px;
+         padding: 80px 10px 10px 10px;
          flex-wrap: wrap;
          gap: 5px;
          background-color: rgba(0, 0, 0, 0.7);
+         z-index: 2;
 
 
          & .closeHolder {
-            width: 100vw;
-            height: 50px;
+            position: fixed;
+            top: 0;
+            width: 99%;
+            height: 70px;
             display: flex;
             align-items: center;
+            background-color: red;
             justify-content: flex-end;
+            z-index: 2;
 
             & .icon {
                rotate: 180deg;
-               font-size: 50px;
+               font-size: 70px;
                color: white;
             }
          }
 
-         & .picFrame2 {
+         & .prevPic {
             position: relative;
-            width: 100vw;
-            height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-            z-index: 2;
-
-
-            
-            & .pics2 {
-               object-fit: contain;
-            }
+            width: 100%;
          }
       }
       
@@ -478,11 +497,13 @@
       justify-content: center;
       flex-direction: column;
       gap: 10px;
+      font: 25px arial;
 
 
       & .btns {
          display: flex;
          gap: 10px;
+         margin-bottom: 30px;
 
 
          & button {

@@ -25,9 +25,6 @@ const StudyPlan = () => {
    const [delNotes, setDelNotes] = useState(false)
    const optionRef = useRef(null)
 
-   useEffect(() => {
-
-   }, [])
 
 
    useEffect(() => {
@@ -43,7 +40,7 @@ const StudyPlan = () => {
          {
             day: 1,
             images: ["../images/oxford/int/1a.jpg", "../images/oxford/int/1b.jpg"],
-            book: "Word Skills Intermediate",
+            book: "Word Skills Int.",
             pages: [12, 13],
             instructions: [
                {
@@ -104,7 +101,7 @@ const StudyPlan = () => {
          {
             day: 2,
             images: ["../images/oxford/int/2a.jpg", "../images/oxford/int/2b.jpg"],
-            book: "Word Skills Intermediate",
+            book: "Word Skills Int.",
             pages: [14, 15],
             instructions: [
                {
@@ -922,6 +919,7 @@ const StudyPlan = () => {
             </div>
             <DatePicker /> {/* Render the DatePicker component */}
          </div>
+         <div className={styles.programmer}>Powered by: Mohamad Gomar</div>
       </div>
       );
    }
@@ -933,10 +931,12 @@ const StudyPlan = () => {
    return (
       <div className={styles.bigMom}>
 
-         <video className={styles.back} muted autoPlay loop playsInline>
-            <source src="../videos/back.mp4" type="video/mp4"/>
-            Your browser does not support the video tag.
-         </video>
+         <Image className={styles.back}
+            src='../images/back/mainBack.jpg'
+            fill
+            alt="background"
+         />
+         
 
          <div className={styles.holder}>
             <div className={styles.dates}>
@@ -950,6 +950,8 @@ const StudyPlan = () => {
                      <div className={styles.menu}>
                         <div className={styles.item} onClick={showWarning}>Restart</div>
                         <div className={styles.item}>About</div>
+                        <div className={styles.item}>Accent</div>
+                        <div className={styles.item}>All-Days Plan</div>
                      </div>
                      : null
 
@@ -959,15 +961,13 @@ const StudyPlan = () => {
                {
                   info.length > 0 ?
                   <>
-                     <div className={styles.picHolder} onClick={showPic}>
+                     <div className={styles.picsHolder} onClick={showPic}>
                         {
                            info[currentDay - 1]?.images?.map((img, index) => (
                               <div className={styles.picFrame} key={index}>
-                                 <Image className={styles.pics}
+                                 <img className={styles.pics}
                                     src={img}
                                     alt="book"
-                                    fill
-                                    priority
                                  />
                                  <div className={styles.infoLayer}>
                                     <div className={styles.book}>{info[currentDay - 1].book}</div>
@@ -993,13 +993,17 @@ const StudyPlan = () => {
                                  <div className={styles.top}
                                     onClick={() => taskClick(currentDay, index)}
                                  >
-                                    {task.title}
+                                    <div className={styles.topic}>
+                                       {task.title}
+                                    </div>
                                     
                                     <IoIosArrowDown className={`${styles.icon} ${expand.length > 0 &&
-                                 expand.some((state) => state.day == currentDay && state.index == index) ? styles.turn : null}`}
-                                 />
+                                    expand.some((state) => state.day == currentDay && state.index == index) ? styles.turn : null}`}
+                                    />
                                  </div>
-                                 {task.todo}
+                                 <div className={styles.todo}>
+                                    {task.todo}
+                                 </div>
                                  <div className={styles.extra}>
                                     <div className={styles.input}>
                                        <input className={styles.textarea}
@@ -1049,13 +1053,11 @@ const StudyPlan = () => {
                            </div>
                            {
                               info[currentDay - 1].images.map((img, index) => (
-                                 <div className={styles.picFrame2} key={index}>
-                                    <Image className={styles.pics2}
+                                    <img className={styles.prevPic}
+                                       key={index}
                                        src={img}
                                        alt="book"
-                                       fill
                                     />
-                                 </div>
                               ))
                            }
                         </div>
