@@ -861,7 +861,6 @@ const StudyPlan = () => {
    function closeOption(event){
       if (optionRef.current && !optionRef.current.contains(event.target)) {
          setMenu(false)
-         console.log('Clicked outside the div!');
       }
    }
 
@@ -1049,17 +1048,19 @@ const StudyPlan = () => {
                         watch ?
                         <div className={styles.hiddenPic}>
                            <div className={styles.closeHolder} onClick={showPic}>
-                              <IoIosArrowRoundBack  className={styles.icon}/>
+                              <IoIosArrowRoundBack  className={styles.icon}/> back
                            </div>
-                           {
-                              info[currentDay - 1].images.map((img, index) => (
-                                    <img className={styles.prevPic}
-                                       key={index}
-                                       src={img}
-                                       alt="book"
-                                    />
-                              ))
-                           }
+                           <div className={styles.prevHolder}>
+                              {
+                                 info[currentDay - 1].images.map((img, index) => (
+                                       <img className={styles.prevPic}
+                                          key={index}
+                                          src={img}
+                                          alt="book"
+                                       />
+                                 ))
+                              }
+                           </div>
                         </div>
                         : null
                      }
