@@ -300,6 +300,7 @@
          width: 100%;
          height: 70%;
          min-width: 100%;
+         scrollbar-width: none;
          overflow-y: scroll;
          border-radius: 10px;
          padding: 10px;
@@ -625,6 +626,21 @@
                width: 20px;
             }
          }
+      }
+   }
+
+   & .btn {
+      padding: 10px 20px;
+      margin-top: 20px;
+      border: none;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.5);
+      
+      
+      &:active {
+         box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0);
+         scale: 0.95;
       }
    }
 }

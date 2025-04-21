@@ -1393,186 +1393,199 @@ const StudyPlan = () => {
    const displayedDate = baseDate.format("jYYYY/jMM/jDD");
 
 
-   return (
-      <div className={styles.bigMom}>
-
-         <Image className={styles.back}
-            src='../images/back/mainBack.jpg'
-            fill
-            alt="background"
-         />
-         
-         <div className={styles.holder}>
-            <div className={styles.dates}>
-               <div className={styles.date}>Instructions for day {currentDay}: {displayedDate} | today is {persianDate}</div>
-               <div className={styles.menuHolder}>
-                  <div className={styles.dotHolder} onClick={toggleMenu} ref={optionRef}>
-                     <SlOptionsVertical className={styles.hamIcon} />
-                  </div>
-                  {
-                     menu ?
-                     <div className={styles.menu}>
-                        <div className={styles.item} onClick={showWarning}>Restart</div>
-                        <div className={styles.item}>About</div>
-                        <div className={styles.item}>Accent</div>
-                        <div className={styles.item}>All-Days Plan</div>
-                     </div>
-                     : null
-
-                  }
-               </div>
-            </div>
-               {
-                  info.length > 0 ?
-                  <>
-                     <div className={styles.picsHolder} onClick={showPic}>
-                        {
-                           info[currentDay - 1]?.images?.map((img, index) => (
-                              <div className={styles.picFrame} key={index}>
-                                 <img className={styles.pics}
-                                    src={img}
-                                    alt="book"
-                                 />
-                                 <div className={styles.infoLayer}>
-                                    <div className={styles.book}>{info[currentDay - 1].book}</div>
-                                    <div className={styles.pages}>pages
-                                       {
-                                          info[currentDay - 1].pages.map((page, index) => (
-                                             <div key={index}>{page}</div>
-                                          ))
-                                       }
-                                    </div>
-                                 </div>
-                              </div>
-                           ))
-                        }
-                     </div>
-                     <div className={styles.tasks}>
-                        {
-                           info[currentDay - 1].instructions.map((task, index) => (
-                              <div className={`${styles.task} ${expand.length > 0 &&
-                                 expand.some((state) => state.day == currentDay && state.index == index) ? styles.open : null}`}
-                                 key={index} 
-                              >
-                                 <div className={styles.top}
-                                    onClick={() => taskClick(currentDay, index)}
-                                 >
-                                    <div className={styles.topic}>
-                                       {task.title}
-                                    </div>
-                                    
-                                    <IoIosArrowDown className={`${styles.icon} ${expand.length > 0 &&
-                                    expand.some((state) => state.day == currentDay && state.index == index) ? styles.turn : null}`}
-                                    />
-                                 </div>
-                                 <div className={styles.todo}>
-                                    {task.todo}
-                                 </div>
-                                 <div className={styles.extra}>
-                                    <div className={styles.input}>
-                                       <input className={styles.textarea}
-                                          placeholder="Need a note?"
-                                          type="text"
-                                          value={note}
-                                          onInput={(e) => setNote(e.target.value)}
-                                       />
-                                       <button className={styles.save}
-                                          onClick={() => saveNotes(currentDay, index)}
-                                       >save</button>
-                                    </div>
-                                    <div className={styles.notes}>
-                                       {
-
-                                          allNotes.map((item) => (
-                                             item.day == currentDay && item.index == index ?
-                                             <div className={styles.note}
-                                                key={item.note}
-                                             >
-                                                {
-                                                   item.note
-                                                }
-                                             </div>
-                                             : null
-                                          ))
-                                       }
-                                    </div>
-                                 </div>
-
-                                 
-                                 {/* {
-                                    done.length > 0 &&
-                                    done.some((task) => task.day == currentDay && task.index == index) ? (
-                                       <div className={styles.done}>Done!</div> 
-                                    )  : null
-                                 } */}
-                              </div>
-                           ))
-                        }
+   if(currentDay < 13){
+      return (
+         <div className={styles.bigMom}>
+   
+            <Image className={styles.back}
+               src='../images/back/mainBack.jpg'
+               fill
+               alt="background"
+            />
+            
+            <div className={styles.holder}>
+               <div className={styles.dates}>
+                  <div className={styles.date}>Instructions for day {currentDay}: {displayedDate}</div>
+                  <div className={styles.menuHolder}>
+                     <div className={styles.dotHolder} onClick={toggleMenu} ref={optionRef}>
+                        <SlOptionsVertical className={styles.hamIcon} />
                      </div>
                      {
-                        watch ?
-                        <div className={styles.hiddenPic}>
-                           <div className={styles.closeHolder} onClick={showPic}>
-                              <IoIosArrowRoundBack  className={styles.icon}/> back
-                           </div>
-                           <div className={styles.prevHolder}>
-                              {
-                                 info[currentDay - 1].images.map((img, index) => (
-                                       <img className={styles.prevPic}
-                                          key={index}
-                                          src={img}
-                                          alt="book"
-                                       />
-                                 ))
-                              }
-                           </div>
+                        menu ?
+                        <div className={styles.menu}>
+                           <div className={styles.item} onClick={showWarning}>Restart</div>
+                           <div className={styles.item}>About</div>
+                           <div className={styles.item}>Accent</div>
+                           <div className={styles.item}>All-Days Plan</div>
                         </div>
                         : null
+   
                      }
-                  </>
-                  : null
-               }
-            
-
-            <div className={styles.buttonHolder}>
-               <button className={styles.btn}
-                  disabled={currentDay === 1}
-                  onClick={() => setCurrentDay(currentDay - 1)}
-               >
-                  Previous Day
-               </button>
-               <button className={styles.btn}
-                  disabled={currentDay === 700}
-                  onClick={() => setCurrentDay(currentDay + 1)}
-               >
-                  Next Day
-               </button>
-            </div>         
-         </div>
-
-         {
-            warning ?
-            <div className={styles.warning}>
-               <div>Are you sure you want to restart?</div>
-               <div className={styles.btns}>
-                  <button className={styles.yes} onClick={restartApp}>Yes</button>
-                  <button className={styles.no} onClick={cancelRestart}>No</button>
+                  </div>
                </div>
-               <div className={styles.delNotes}>
-                  <label className={styles.label}>
-                     <input className={styles.checkbox}
-                        type="checkbox"
-                        checked={delNotes}
-                        onChange={deleteNotes}
-                     />
-                     Delete my notes, too.
-                  </label>
-               </div>
+                  {
+                     info.length > 0 ?
+                     <>
+                        <div className={styles.picsHolder} onClick={showPic}>
+                           {
+                              info[currentDay - 1]?.images?.map((img, index) => (
+                                 <div className={styles.picFrame} key={index}>
+                                    <img className={styles.pics}
+                                       src={img}
+                                       alt="book"
+                                    />
+                                    <div className={styles.infoLayer}>
+                                       <div className={styles.book}>{info[currentDay - 1].book}</div>
+                                       <div className={styles.pages}>pages
+                                          {
+                                             info[currentDay - 1].pages.map((page, index) => (
+                                                <div key={index}>{page}</div>
+                                             ))
+                                          }
+                                       </div>
+                                    </div>
+                                 </div>
+                              ))
+                           }
+                        </div>
+                        <div className={styles.tasks}>
+                           {
+                              info[currentDay - 1].instructions.map((task, index) => (
+                                 <div className={`${styles.task} ${expand.length > 0 &&
+                                    expand.some((state) => state.day == currentDay && state.index == index) ? styles.open : null}`}
+                                    key={index} 
+                                 >
+                                    <div className={styles.top}
+                                       onClick={() => taskClick(currentDay, index)}
+                                    >
+                                       <div className={styles.topic}>
+                                          {task.title}
+                                       </div>
+                                       
+                                       <IoIosArrowDown className={`${styles.icon} ${expand.length > 0 &&
+                                       expand.some((state) => state.day == currentDay && state.index == index) ? styles.turn : null}`}
+                                       />
+                                    </div>
+                                    <div className={styles.todo}>
+                                       {task.todo}
+                                    </div>
+                                    <div className={styles.extra}>
+                                       <div className={styles.input}>
+                                          <input className={styles.textarea}
+                                             placeholder="Need a note?"
+                                             type="text"
+                                             value={note}
+                                             onInput={(e) => setNote(e.target.value)}
+                                          />
+                                          <button className={styles.save}
+                                             onClick={() => saveNotes(currentDay, index)}
+                                          >save</button>
+                                       </div>
+                                       <div className={styles.notes}>
+                                          {
+   
+                                             allNotes.map((item) => (
+                                                item.day == currentDay && item.index == index ?
+                                                <div className={styles.note}
+                                                   key={item.note}
+                                                >
+                                                   {
+                                                      item.note
+                                                   }
+                                                </div>
+                                                : null
+                                             ))
+                                          }
+                                       </div>
+                                    </div>
+   
+                                    
+                                    {/* {
+                                       done.length > 0 &&
+                                       done.some((task) => task.day == currentDay && task.index == index) ? (
+                                          <div className={styles.done}>Done!</div> 
+                                       )  : null
+                                    } */}
+                                 </div>
+                              ))
+                           }
+                        </div>
+                        {
+                           watch ?
+                           <div className={styles.hiddenPic}>
+                              <div className={styles.closeHolder} onClick={showPic}>
+                                 <IoIosArrowRoundBack  className={styles.icon}/> back
+                              </div>
+                              <div className={styles.prevHolder}>
+                                 {
+                                    info[currentDay - 1].images.map((img, index) => (
+                                          <img className={styles.prevPic}
+                                             key={index}
+                                             src={img}
+                                             alt="book"
+                                          />
+                                    ))
+                                 }
+                              </div>
+                           </div>
+                           : null
+                        }
+                     </>
+                     : <div>Data Available in Next Update</div>
+                  }
+               
+   
+               <div className={styles.buttonHolder}>
+                  <button className={styles.btn}
+                     disabled={currentDay === 1}
+                     onClick={() => setCurrentDay(currentDay - 1)}
+                  >
+                     Previous Day
+                  </button>
+                  <button className={styles.btn}
+                     disabled={currentDay === 700}
+                     onClick={() => setCurrentDay(currentDay + 1)}
+                  >
+                     Next Day
+                  </button>
+               </div>         
             </div>
-            : null
-         }
-      </div>
-   );
+   
+            {
+               warning ?
+               <div className={styles.warning}>
+                  <div>Are you sure you want to restart?</div>
+                  <div className={styles.btns}>
+                     <button className={styles.yes} onClick={restartApp}>Yes</button>
+                     <button className={styles.no} onClick={cancelRestart}>No</button>
+                  </div>
+                  <div className={styles.delNotes}>
+                     <label className={styles.label}>
+                        <input className={styles.checkbox}
+                           type="checkbox"
+                           checked={delNotes}
+                           onChange={deleteNotes}
+                        />
+                        Delete my notes, too.
+                     </label>
+                  </div>
+               </div>
+               : null
+            }
+         </div>
+      );
+   } else {
+      return (
+         <div className={styles.bigMom}>
+            <h2>Data Available Soon</h2>
+            <button
+               className={styles.btn}
+               disabled={currentDay === 1}
+               onClick={() => setCurrentDay(currentDay - 1)}
+            >Go Back</button>
+         </div>
+      )
+   }
 };
 
 export default StudyPlan;
