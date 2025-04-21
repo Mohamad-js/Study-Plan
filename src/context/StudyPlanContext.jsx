@@ -17,6 +17,7 @@ export const StudyPlanProvider = ({ children }) => {
       midnight.setHours(24, 0, 0, 0);
       const timeout = midnight.getTime() - now.getTime();
 
+
       const timer = setTimeout(() => {
          setCurrentDay((prev) => Math.min(prev + 1, 700));
       }, timeout);

@@ -45,50 +45,47 @@ const StudyPlan = () => {
             instructions: [
                {
                   title: 'Learning The Glossary (p 12)',
-
-                  todo:'Read the wordsو definitions and the synonyms & antonyms (if any) in the Glossary and try to understand their meaning without using English-Persian dictioanry. But you can use Google Online Dictionary any time you like.',
-
+                  todo:'Read the words, definitions and the synonyms & antonyms (if any) in the Glossary and try to understand their meaning without using English-Persian dictioanry. Use Google Online Dictionary or Longman Dictionary of Contemporary English (latest version).',
                   extra: ''
                },
                {
                   title: 'Learning Pronunciation (p 12)',
-
-                  todo:'Check the British phonetic & pronunciation of each word in the Google Online Dictionary. Then try to repeat the correct British pronunciation 3 times. If you need more help with the British accent, check the "ACCENT" page of the app.',
+                  todo:'Check the British phonetic & pronunciation of each Glossary word in the dictionary. Then try to repeat the correct British pronunciation 3 times. If you need more help with the British accent, check the "ACCENT" page of the app.',
                   extra: ''
                },
                {
                   title: 'Word Comprehension (p 12)',
-                  todo:'Read the "ADVICE FOR READING" and check how the words in the Glossary are used in natural English. If you forget the meaning of the words while you read, check the meaning back in the glossary. Use Google Online Dictionary for the unknown words in the text.',
+                  todo:'Read the "ADVICE FOR READING" and check how the words in the Glossary are used in natural English. If you forget the meaning of the words while you read, check the meaning back in the glossary. Use Google Online Dictionary or Longman Dictionary of Contemporary English (latest version) for the unknown words in the text.',
                   extra: ''
                },
                {
                   title: 'Using The Vocabularies (p 12)',
-                  todo:'Make a good sentence with each word in the Glossary (page 12). If you have difficulty understading what to write, check the examples of the word in English-Englsih dictionary. But try not to copy the exmaple. Instead, try to find an idea by reading the examples.',
+                  todo:'Make a good sentence with each word in the Glossary. If you have difficulty understading what to write, check the examples of the word in Google Online Dictionary or Longman Dictionary of Contemporary English (latest version). But try not to copy the exmaple. Instead, try to find an idea by reading the examples.',
                   extra: ''
                },
                {
                   title: 'Learning The Vocabularies (p 13)',
-                  todo:'Read the wordsو definitions and the synonyms & antonyms (if any) in the Glossary and try to understand their meaning without using English-Persian dictioanry. But you can use English-English dictionary any time yu like.',
+                  todo:'Read the words, definitions and the synonyms & antonyms (if any) in the Glossary and try to understand their meaning without using English-Persian dictioanry. Use Google Online Dictionary or Longman Dictionary of Contemporary English (latest version).',
                   extra: ''
                },
                {
                   title: 'Learning Pronunciation (p 13)',
-                  todo:'Check the British phonetic & pronunciation of each word in the google online dictionary. Then try to repeat the correct British pronunciation aloud 3 times. If you need more help with the British accent, check the "ACCENT" page of the app.',
+                  todo:'Check the British phonetic & pronunciation of each Glossary word in the dictionary. Then try to repeat the correct British pronunciation 3 times. If you need more help with the British accent, check the "ACCENT" page of the app.',
                   extra: ''
                },
                {
                   title: 'Word Comprehension (p 13)',
-                  todo:'Read the text (page 13) and check how the words in the Glossary are used in natural English. If you forget the meaning of the words while you read, check the meaning back in the glossary. Use English-English dictionary for the unknown words in the text.',
+                  todo:'Read the reading and check how the words in the Glossary are used in natural English. If you forget the meaning of the words while you read, check the meaning back in the glossary. Use Google Online Dictionary or Longman Dictionary of Contemporary English (latest version) for the unknown words in the text.',
                   extra: ''
                },
                {
                   title: 'Using The Vocabularies (p 13)',
-                  todo:'Make a good sentence with each word in the Glossary. If you have difficulty understading what to write, check the examples of the word in English-Englsih dictionary. But try not to copy the exmaple. Instead, try to find an idea by reading the examples.',
+                  todo:'Make a good sentence with each word in the Glossary. If you have difficulty understading what to write, check the examples of the word in Google Online Dictionary or Longman Dictionary of Contemporary English (latest version). But try not to copy the exmaple. Instead, try to find an idea by reading the examples.',
                   extra: ''
                },
                {
                   title: 'SPOTLIGHT (p 13)',
-                  todo:'Read the spotlight and check the difference between conversation, discussion and argument. Then check the definition and examples for each word in English-English dictionary to better understand their differences.',
+                  todo:'Read the spotlight and check the difference between conversation, discussion and argument. Then check the definition and examples for each word in Google Online Dictionary or Longman Dictionary of Contemporary English (latest version) to better understand their differences.',
                   extra: ''
                },
                {
@@ -105,93 +102,562 @@ const StudyPlan = () => {
             pages: [14, 15],
             instructions: [
                {
-                  title: 'Learning The Vocabularies',
-                  todo:'Read the words and definitions in the Glossary to understand their meaning.',
+                  title: 'Learning The Glossary (p 14)',
+                  todo:'Read the words, definitions and the synonyms & antonyms (if any) in the Glossary and try to understand their meaning without using English-Persian dictioanry. Use Google Online Dictionary or Longman Dictionary of Contemporary English (latest version).',
+                  extra: ''
                },
                {
-                  title: 'Learning Pronunciation',
-                  todo:'Check the phonetic of each word in the google online dictionary and practice the correct pronunciation.',
+                  title: 'Learning Pronunciation (p 14)',
+                  todo:'Check the British phonetic & pronunciation of each Glossary word in the dictionary. Then try to repeat the correct British pronunciation 3 times. If you need more help with the British accent, check the "ACCENT" page of the app.',
+                  extra: ''
                },
                {
-                  title: 'Word Comprehension',
-                  todo:'Read the "ADVICE FOR READING" and check how the words in the Glossary are used in natural English.',
+                  title: 'Word Comprehension (p 14)',
+                  todo:'Read the reading and check how the words in the Glossary are used in natural English. If you forget the meaning of the words while you read, check the meaning back in the glossary. Use Google Online Dictionary or Longman Dictionary of Contemporary English (latest version) for the unknown words in the text.',
+                  extra: ''
                },
                {
-                  title: 'Using The Vocabularies',
-                  todo:'Make a good sentence with each word in the Glossary.',
+                  title: 'Using The Vocabularies (p 14)',
+                  todo:'Make a good sentence with each word in the Glossary. If you have difficulty understading what to write, check the examples of the word in Google Online Dictionary or Longman Dictionary of Contemporary English (latest version). But try not to copy the exmaple. Instead, try to find an idea by reading the examples.',
+                  extra: ''
                },
+               {
+                  title: 'Learning The Vocabularies (p 15)',
+                  todo:'Read the words, definitions and the synonyms & antonyms (if any) in the Glossary and try to understand their meaning without using English-Persian dictioanry. Use Google Online Dictionary or Longman Dictionary of Contemporary English (latest version).',
+                  extra: ''
+               },
+               {
+                  title: 'Learning Pronunciation (p 15)',
+                  todo:'Check the British phonetic & pronunciation of each Glossary word in the dictionary. Then try to repeat the correct British pronunciation 3 times. If you need more help with the British accent, check the "ACCENT" page of the app.',
+                  extra: ''
+               },
+               {
+                  title: 'Word Comprehension (p 15)',
+                  todo:'Read the reading and check how the words in the Glossary are used in natural English. If you forget the meaning of the words while you read, check the meaning back in the glossary. Use Google Online Dictionary or Longman Dictionary of Contemporary English (latest version) for the unknown words in the text.',
+                  extra: ''
+               },
+               {
+                  title: 'Using The Vocabularies (p 15)',
+                  todo:'Make a good sentence with each word in the Glossary. If you have difficulty understading what to write, check the examples of the word in Google Online Dictionary or Longman Dictionary of Contemporary English (latest version). But try not to copy the exmaple. Instead, try to find an idea by reading the examples.',
+                  extra: ''
+               },
+               {
+                  title: 'SPOTLIGHT (p 15)',
+                  todo:'Read the spotlight and check the difference between contain and include. Then check the definition and examples for each word in Google Online Dictionary or Longman Dictionary of Contemporary English (latest version) to better understand their differences.',
+                  extra: ''
+               },
+               {
+                  title: 'Practicing British Accent',
+                  todo: 'Practice reading the text in pages 14 & 15 in British accent. When you feel you are ready, read each text again aloud and record your voice. Then send your recordings to the teacher before the end of the day to check your mistakes and weaknesses.',
+                  extra: ''
+               }
             ],
          },
-         // {
-         //    day: 3,
-         //    images: ["../images/oxford/int/3.jpg"],
-         //    book: "Word Skills Intermediate",
-         //    pages: [],
-         //    instructions: []
-         // },
-         // {
-         //    day: 4,
-         //    images: ["../images/oxford/int/4.jpg"],
-         //    book: "Word Skills Intermediate",
-         //    pages: [],
-         //    instructions: []
-         // },
-         // {
-         //    day: 5,
-         //    images: ["../images/oxford/int/5a.jpg", "../images/oxford/int/5b.jpg"],
-         //    book: "Word Skills Intermediate",
-         //    pages: [],
-         //    instructions: []
-         // },
-         // {
-         //    day: 6,
-         //    images: ["../images/oxford/int/6a.jpg", "../images/oxford/int/6b.jpg"],
-         //    book: "Word Skills Intermediate",
-         //    pages: [],
-         //    instructions: []
-         // },
-         // {
-         //    day: 7,
-         //    images: ["../images/oxford/int/7.jpg"],
-         //    book: "Word Skills Intermediate",
-         //    pages: [],
-         //    instructions: []
-         // },
-         // {
-         //    day: 8,
-         //    images: ["../images/oxford/int/8a.jpg", "../images/oxford/int/8b.jpg"],
-         //    book: "Word Skills Intermediate",
-         //    pages: [],
-         //    instructions: []
-         // },
-         // {
-         //    day: 9,
-         //    images: ["../images/oxford/int/9a.jpg", "../images/oxford/int/9b.jpg"],
-         //    book: "Word Skills Intermediate",
-         //    pages: [],
-         //    instructions: []
-         // },
-         // {
-         //    day: 10,
-         //    images: ["../images/oxford/int/10a.jpg", "../images/oxford/int/10b.jpg"],
-         //    book: "Word Skills Intermediate",
-         //    pages: [],
-         //    instructions: []
-         // },
-         // {
-         //    day: 11,
-         //    images: ["../images/oxford/int/11a.jpg", "../images/oxford/int/11b.jpg"],
-         //    book: "Word Skills Intermediate",
-         //    pages: [],
-         //    instructions: []
-         // },
-         // {
-         //    day: 12,
-         //    images: ["../images/oxford/int/12a.jpg", "../images/oxford/int/12b.jpg"],
-         //    book: "Word Skills Intermediate",
-         //    pages: [],
-         //    instructions: []
-         // },
+         {
+            day: 3,
+            images: ["../images/oxford/int/3.jpg"],
+            book: "Word Skills Intermediate",
+            pages: [16],
+            instructions: [
+               {
+                  title: 'Learning The Glossary (p 16)',
+                  todo:'Read the words, definitions and the synonyms & antonyms (if any) in the Glossary and try to understand their meaning without using English-Persian dictioanry. Use Google Online Dictionary or Longman Dictionary of Contemporary English (latest version).',
+                  extra: ''
+               },
+               {
+                  title: 'Learning Pronunciation (p 16)',
+                  todo:'Check the British phonetic & pronunciation of each Glossary word in the dictionary. Then try to repeat the correct British pronunciation 3 times. If you need more help with the British accent, check the "ACCENT" page of the app.',
+                  extra: ''
+               },
+               {
+                  title: 'Word Comprehension (p 16)',
+                  todo:'Check the dictionary pages in unit 3 and using the pictures, see what the words mean in a typical dictionary. If you forget the meaning of the words while you read, check the meaning back in the glossary. Use Google Online Dictionary or Longman Dictionary of Contemporary English (latest version) for the unknown words in the text.',
+                  extra: ''
+               },
+               {
+                  title: 'Using The Vocabularies (p 16)',
+                  todo:'Make a good sentence with each word in the Glossary. If you have difficulty understading what to write, check the examples of the word in Google Online Dictionary or Longman Dictionary of Contemporary English (latest version). But try not to copy the exmaple. Instead, try to find an idea by reading the examples.',
+                  extra: ''
+               },
+               {
+                  title: 'SPOTLIGHT (p 16)',
+                  todo:'Read the spotlight and check the difference between emphasize and stress. Then check the definition and examples for each word in Google Online Dictionary or Longman Dictionary of Contemporary English (latest version) to better understand their differences.',
+                  extra: ''
+               },
+               {
+                  title: 'Practicing British Accent',
+                  todo: 'Practice reading the sentences in page 16 in British accent. When you feel you are ready, read each text again aloud and record your voice. Then send your recordings to the teacher before the end of the day to check your mistakes and weaknesses.',
+                  extra: ''
+               }
+            ],
+         },
+         {
+            day: 4,
+            images: ["../images/oxford/int/4.jpg"],
+            book: "Word Skills Intermediate",
+            pages: [18],
+            instructions: [
+               {
+                  title: 'Learning The Glossary (p 18)',
+                  todo:'Read the words, definitions and the synonyms & antonyms (if any) in the Glossary and try to understand their meaning without using English-Persian dictioanry. Use Google Online Dictionary or Longman Dictionary of Contemporary English (latest version).',
+                  extra: ''
+               },
+               {
+                  title: 'Learning The Punctuations (p 18)',
+                  todo:'Check the punctuations and where we should use them in English, using the "Some important punctuation rules" section.',
+                  extra: ''
+               },
+               {
+                  title: 'Learning Pronunciation (p 18)',
+                  todo:'Check the British phonetic & pronunciation of each Glossary word in the dictionary. Then try to repeat the correct British pronunciation 3 times. If you need more help with the British accent, check the "ACCENT" page of the app.',
+                  extra: ''
+               },
+               {
+                  title: 'Word Comprehension (p 18)',
+                  todo:'Read the "Some important punctuation rules" and check how the words in the Glossary are used in natural English. If you forget the meaning of the words while you read, check the meaning back in the glossary. Use Google Online Dictionary or Longman Dictionary of Contemporary English (latest version) for the unknown words in the text.',
+                  extra: ''
+               },
+               {
+                  title: 'Using The Vocabularies (p 18)',
+                  todo:'Make a good sentence with each word in the Glossary. If you have difficulty understading what to write, check the examples of the word in Google Online Dictionary or Longman Dictionary of Contemporary English (latest version). But try not to copy the exmaple. Instead, try to find an idea by reading the examples.',
+                  extra: ''
+               },
+               {
+                  title: 'SPOTLIGHT (p 18)',
+                  todo:'Read the spotlight and check the difference between contain and include. Then check the definition and examples for each word in Google Online Dictionary or Longman Dictionary of Contemporary English (latest version) to better understand their differences.',
+                  extra: ''
+               },
+               {
+                  title: 'Practicing British Accent',
+                  todo: 'Practice reading the text in page 18 in British accent. When you feel you are ready, read each text again aloud and record your voice. Then send your recordings to the teacher before the end of the day to check your mistakes and weaknesses.',
+                  extra: ''
+               }
+            ],
+         },
+         {
+            day: 5,
+            images: ["../images/oxford/int/5a.jpg", "../images/oxford/int/5b.jpg"],
+            book: "Word Skills Intermediate",
+            pages: [20, 21],
+            instructions: [
+               {
+                  title: 'Learning The Words (p 20)',
+                  todo:'Read the words and try to understand their meaning from the pictures provided. If you needed a dictionary, use Google Online Dictionary or Longman Dictionary of Contemporary English (latest version).',
+                  extra: ''
+               },
+               {
+                  title: 'Learning Pronunciation (p 20)',
+                  todo:'Check the British phonetic & pronunciation of each word in the dictionary. Then try to repeat the correct British pronunciation 3 times. If you need more help with the British accent, check the "ACCENT" page of the app.',
+                  extra: ''
+               },
+               {
+                  title: 'Using The Vocabularies (p 20)',
+                  todo:'Make a good sentence with each word. If you have difficulty understading what to write, check the examples of the word in Google Online Dictionary or Longman Dictionary of Contemporary English (latest version). But try not to copy the exmaple. Instead, try to find an idea by reading the examples.',
+                  extra: ''
+               },
+               {
+                  title: 'Learning The Vocabularies (p 21)',
+                  todo:'Read the words and try to understand their meaning from the pictures provided. If you needed a dictionary, use Google Online Dictionary or Longman Dictionary of Contemporary English (latest version).',
+                  extra: ''
+               },
+               {
+                  title: 'Learning Pronunciation (p 21)',
+                  todo:'Check the British phonetic & pronunciation of each word in the dictionary. Then try to repeat the correct British pronunciation 3 times. If you need more help with the British accent, check the "ACCENT" page of the app.',
+                  extra: ''
+               },
+               {
+                  title: 'Using The Vocabularies (p 21)',
+                  todo:'Make a good sentence with each word. If you have difficulty understading what to write, check the examples of the word in Google Online Dictionary or Longman Dictionary of Contemporary English (latest version). But try not to copy the exmaple. Instead, try to find an idea by reading the examples.',
+                  extra: ''
+               },
+            ]
+         },
+         {
+            day: 6,
+            images: ["../images/oxford/int/6a.jpg", "../images/oxford/int/6b.jpg"],
+            book: "Word Skills Intermediate",
+            pages: [22, 23],
+            instructions: [
+               {
+                  title: 'Learning The Glossary (p 22)',
+                  todo:'Read the words, definitions and the synonyms & antonyms (if any) in the Glossary plus the new words under each picture and try to understand their meaning without using English-Persian dictioanry. Use Google Online Dictionary or Longman Dictionary of Contemporary English (latest version).',
+                  extra: ''
+               },
+               {
+                  title: 'Learning Pronunciation (p 22)',
+                  todo:'Check the British phonetic & pronunciation of each Glossary word in the dictionary. Then try to repeat the correct British pronunciation 3 times. If you need more help with the British accent, check the "ACCENT" page of the app.',
+                  extra: ''
+               },
+               {
+                  title: 'Using The Vocabularies (p 22)',
+                  todo:'Make a good sentence with each word in the Glossary plus the new words under each picture. If you have difficulty understading what to write, check the examples of the word in Google Online Dictionary or Longman Dictionary of Contemporary English (latest version). But try not to copy the exmaple. Instead, try to find an idea by reading the examples.',
+                  extra: ''
+               },
+               {
+                  title: 'SPOTLIGHT (p 22)',
+                  todo:'Read the spotlight and check the difference between ugly and unattractive. Then check the definition and examples for each word in Google Online Dictionary or Longman Dictionary of Contemporary English (latest version) to better understand their differences.',
+                  extra: ''
+               },
+               {
+                  title: 'Learning The Vocabularies (p 23)',
+                  todo:'Read the words, definitions and the synonyms & antonyms (if any) in the Glossary and try to understand their meaning without using English-Persian dictioanry. Use Google Online Dictionary or Longman Dictionary of Contemporary English (latest version).',
+                  extra: ''
+               },
+               {
+                  title: 'Learning Pronunciation (p 23)',
+                  todo:'Check the British phonetic & pronunciation of each Glossary word in the dictionary. Then try to repeat the correct British pronunciation 3 times. If you need more help with the British accent, check the "ACCENT" page of the app.',
+                  extra: ''
+               },
+               {
+                  title: 'Word Comprehension (p 23)',
+                  todo:'Read the reading and check how the words in the Glossary are used in natural English. If you forget the meaning of the words while you read, check the meaning back in the glossary. Use Google Online Dictionary or Longman Dictionary of Contemporary English (latest version) for the unknown words in the text.',
+                  extra: ''
+               },
+               {
+                  title: 'Using The Vocabularies (p 23)',
+                  todo:'Make a good sentence with each word in the Glossary. If you have difficulty understading what to write, check the examples of the word in Google Online Dictionary or Longman Dictionary of Contemporary English (latest version). But try not to copy the exmaple. Instead, try to find an idea by reading the examples.',
+                  extra: ''
+               },
+               {
+                  title: 'SPOTLIGHT (p 23)',
+                  todo:'Read the spotlight and check where and why we use the suffix -ish in English. Then check the definition and examples for each example word in Google Online Dictionary or Longman Dictionary of Contemporary English (latest version) to better understand its use cases.',
+                  extra: ''
+               },
+               {
+                  title: 'Practicing British Accent',
+                  todo: 'Practice reading the two texts in page 23 in British accent. When you feel you are ready, read each text again aloud and record your voice. Then send your recordings to the teacher before the end of the day to check your mistakes and weaknesses.',
+                  extra: ''
+               }
+            ]
+         },
+         {
+            day: 7,
+            images: ["../images/oxford/int/7.jpg"],
+            book: "Word Skills Intermediate",
+            pages: [24],
+            instructions: [
+               {
+                  title: 'Learning The Vocabularies (p 24)',
+                  todo:'Read the words, definitions and the synonyms & antonyms (if any) in the Glossary and try to understand their meaning without using English-Persian dictioanry. Use Google Online Dictionary or Longman Dictionary of Contemporary English (latest version).',
+                  extra: ''
+               },
+               {
+                  title: 'Learning Pronunciation (p 24)',
+                  todo:'Check the British phonetic & pronunciation of each Glossary word in the dictionary. Then try to repeat the correct British pronunciation 3 times. If you need more help with the British accent, check the "ACCENT" page of the app.',
+                  extra: ''
+               },
+               {
+                  title: 'Word Comprehension (p 24)',
+                  todo:'Read the texts next to the pictures and check how the words in the Glossary are used in natural English. If you forget the meaning of the words while you read, check the meaning back in the glossary. Use Google Online Dictionary or Longman Dictionary of Contemporary English (latest version) for the unknown words in the text.',
+                  extra: ''
+               },
+               {
+                  title: 'Using The Vocabularies (p 24)',
+                  todo:'Make a good sentence with each word in the Glossary. If you have difficulty understading what to write, check the examples of the word in Google Online Dictionary or Longman Dictionary of Contemporary English (latest version). But try not to copy the exmaple. Instead, try to find an idea by reading the examples.',
+                  extra: ''
+               },
+               {
+                  title: 'SPOTLIGHT (p 24)',
+                  todo:'Read the spotlight and check the difference between crazy and mad. Then check the definition and examples for each word in Google Online Dictionary or Longman Dictionary of Contemporary English (latest version) to better understand their differences.',
+                  extra: ''
+               },
+               {
+                  title: 'Practicing British Accent',
+                  todo: 'Practice reading the texts in page 24 in British accent. When you feel you are ready, read each text again aloud and record your voice. Then send your recordings to the teacher before the end of the day to check your mistakes and weaknesses.',
+                  extra: ''
+               }
+            ]
+         },
+         {
+            day: 8,
+            images: ["../images/oxford/int/8a.jpg", "../images/oxford/int/8b.jpg"],
+            book: "Word Skills Intermediate",
+            pages: [26, 27],
+            instructions: [
+               {
+                  title: 'Learning The Glossary (p 26)',
+                  todo:'Read the words, meanings and the synonyms & antonyms (if any) in the chart and try to understand their meaning without using English-Persian dictioanry. Use Google Online Dictionary or Longman Dictionary of Contemporary English (latest version).',
+                  extra: ''
+               },
+               {
+                  title: 'Learning Pronunciation (p 26)',
+                  todo:'Check the British phonetic & pronunciation of each word of the chart in the dictionary. Then try to repeat the correct British pronunciation 3 times. If you need more help with the British accent, check the "ACCENT" page of the app.',
+                  extra: ''
+               },
+               {
+                  title: 'Word Comprehension (p 26)',
+                  todo:'Read the examples in the chart and check how the words are used in natural English. If you forget the meaning of the words while you read, check the meaning. Use Google Online Dictionary or Longman Dictionary of Contemporary English (latest version) for the unknown words in the text.',
+                  extra: ''
+               },
+               {
+                  title: 'Using The Vocabularies (p 26)',
+                  todo:'Make a good sentence with each word in the chart. If you have difficulty understading what to write, check the examples of the word in Google Online Dictionary or Longman Dictionary of Contemporary English (latest version). But try not to copy the exmaple. Instead, try to find an idea by reading the examples.',
+                  extra: ''
+               },
+               {
+                  title: 'SPOTLIGHT (p 26)',
+                  todo:'Read the spotlight and check the difference between alone, lonely and on your own. Then check the definition and examples for each word in Google Online Dictionary or Longman Dictionary of Contemporary English (latest version) to better understand their differences.',
+                  extra: ''
+               },
+               {
+                  title: 'Learning The Vocabularies (p 27)',
+                  todo:'Read the words, definitions and the synonyms & antonyms (if any) in the Glossary and try to understand their meaning without using English-Persian dictioanry. Use Google Online Dictionary or Longman Dictionary of Contemporary English (latest version).',
+                  extra: ''
+               },
+               {
+                  title: 'Learning Pronunciation (p 27)',
+                  todo:'Check the British phonetic & pronunciation of each Glossary word in the dictionary. Then try to repeat the correct British pronunciation 3 times. If you need more help with the British accent, check the "ACCENT" page of the app.',
+                  extra: ''
+               },
+               {
+                  title: 'Word Comprehension (p 27)',
+                  todo:'Read the "YOU AND YOUR EMOTIONS" and check how the words in the Glossary are used in natural English. If you forget the meaning of the words while you read, check the meaning back in the glossary. Use Google Online Dictionary or Longman Dictionary of Contemporary English (latest version) for the unknown words in the text.',
+                  extra: ''
+               },
+               {
+                  title: 'Using The Vocabularies (p 27)',
+                  todo:'Make a good sentence with each word in the Glossary. If you have difficulty understading what to write, check the examples of the word in Google Online Dictionary or Longman Dictionary of Contemporary English (latest version). But try not to copy the exmaple. Instead, try to find an idea by reading the examples.',
+                  extra: ''
+               },
+               {
+                  title: 'SPOTLIGHT (p 27)',
+                  todo:'Read the spotlight and check the different meanings of the word get. Then check the definition and examples in Google Online Dictionary or Longman Dictionary of Contemporary English (latest version) to better understand their differences.',
+                  extra: ''
+               },
+               {
+                  title: 'Practicing British Accent',
+                  todo: 'Practice reading the examples in page 14 and the sentences in page 15 in British accent. When you feel you are ready, read each text again aloud and record your voice. Then send your recordings to the teacher before the end of the day to check your mistakes and weaknesses.',
+                  extra: ''
+               }
+            ]
+         },
+         {
+            day: 9,
+            images: ["../images/oxford/int/9a.jpg", "../images/oxford/int/9b.jpg"],
+            book: "Word Skills Intermediate",
+            pages: [28, 29],
+            instructions: [
+               {
+                  title: 'Learning The Glossary (p 28)',
+                  todo:'Read the words, definitions and the synonyms & antonyms (if any) in the Glossary and try to understand their meaning without using English-Persian dictioanry. Use Google Online Dictionary or Longman Dictionary of Contemporary English (latest version).',
+                  extra: ''
+               },
+               {
+                  title: 'Learning Pronunciation (p 28)',
+                  todo:'Check the British phonetic & pronunciation of each Glossary word in the dictionary. Then try to repeat the correct British pronunciation 3 times. If you need more help with the British accent, check the "ACCENT" page of the app.',
+                  extra: ''
+               },
+               {
+                  title: 'Word Comprehension (p 28)',
+                  todo:'Read the readings and check how the words in the Glossary are used in natural English. If you forget the meaning of the words while you read, check the meaning back in the glossary. Use Google Online Dictionary or Longman Dictionary of Contemporary English (latest version) for the unknown words in the text.',
+                  extra: ''
+               },
+               {
+                  title: 'Using The Vocabularies (p 28)',
+                  todo:'Make a good sentence with each word in the Glossary. If you have difficulty understading what to write, check the examples of the word in Google Online Dictionary or Longman Dictionary of Contemporary English (latest version). But try not to copy the exmaple. Instead, try to find an idea by reading the examples.',
+                  extra: ''
+               },
+               {
+                  title: 'Learning The Vocabularies (p 29)',
+                  todo:'Read the words, definitions and the synonyms & antonyms (if any) in the Glossary and try to understand their meaning without using English-Persian dictioanry. Use Google Online Dictionary or Longman Dictionary of Contemporary English (latest version).',
+                  extra: ''
+               },
+               {
+                  title: 'Learning Pronunciation (p 29)',
+                  todo:'Check the British phonetic & pronunciation of each Glossary word in the dictionary. Then try to repeat the correct British pronunciation 3 times. If you need more help with the British accent, check the "ACCENT" page of the app.',
+                  extra: ''
+               },
+               {
+                  title: 'Word Comprehension (p 29)',
+                  todo:'Read the reading and check how the words in the Glossary are used in natural English. If you forget the meaning of the words while you read, check the meaning back in the glossary. Use Google Online Dictionary or Longman Dictionary of Contemporary English (latest version) for the unknown words in the text.',
+                  extra: ''
+               },
+               {
+                  title: 'Using The Vocabularies (p 29)',
+                  todo:'Make a good sentence with each word in the Glossary. If you have difficulty understading what to write, check the examples of the word in Google Online Dictionary or Longman Dictionary of Contemporary English (latest version). But try not to copy the exmaple. Instead, try to find an idea by reading the examples.',
+                  extra: ''
+               },
+               {
+                  title: 'SPOTLIGHT (p 29)',
+                  todo:'Read the spotlight and check the meaning of expect and how it is used in a sentence. Then check the definition and examples for each word in Google Online Dictionary or Longman Dictionary of Contemporary English (latest version) to better understand their differences.',
+                  extra: ''
+               },
+               {
+                  title: 'Practicing British Accent',
+                  todo: 'Practice reading the readings in pages 28 & 29 in British accent. When you feel you are ready, read each text again aloud and record your voice. Then send your recordings to the teacher before the end of the day to check your mistakes and weaknesses.',
+                  extra: ''
+               }
+            ]
+         },
+         {
+            day: 10,
+            images: ["../images/oxford/int/10a.jpg", "../images/oxford/int/10b.jpg"],
+            book: "Word Skills Intermediate",
+            pages: [30, 31],
+            instructions: [
+               {
+                  title: 'Learning The Glossary (p 30)',
+                  todo:'Read the words, definitions and the synonyms & antonyms (if any) in the Glossary and try to understand their meaning without using English-Persian dictioanry. Use Google Online Dictionary or Longman Dictionary of Contemporary English (latest version).',
+                  extra: ''
+               },
+               {
+                  title: 'Learning Pronunciation (p 30)',
+                  todo:'Check the British phonetic & pronunciation of each Glossary word in the dictionary. Then try to repeat the correct British pronunciation 3 times. If you need more help with the British accent, check the "ACCENT" page of the app.',
+                  extra: ''
+               },
+               {
+                  title: 'Word Comprehension (p 30)',
+                  todo:'Read the sentences and check how the words in the Glossary are used in natural English. If you forget the meaning of the words while you read, check the meaning back in the glossary. Use Google Online Dictionary or Longman Dictionary of Contemporary English (latest version) for the unknown words in the text.',
+                  extra: ''
+               },
+               {
+                  title: 'Using The Vocabularies (p 30)',
+                  todo:'Make a good sentence with each word in the Glossary. If you have difficulty understading what to write, check the examples of the word in Google Online Dictionary or Longman Dictionary of Contemporary English (latest version). But try not to copy the exmaple. Instead, try to find an idea by reading the examples.',
+                  extra: ''
+               },
+               {
+                  title: 'Learning The Vocabularies (p 31)',
+                  todo:'Read the words, definitions and the synonyms & antonyms (if any) in the Glossary and try to understand their meaning without using English-Persian dictioanry. Use Google Online Dictionary or Longman Dictionary of Contemporary English (latest version).',
+                  extra: ''
+               },
+               {
+                  title: 'Learning Pronunciation (p 31)',
+                  todo:'Check the British phonetic & pronunciation of each Glossary word in the dictionary. Then try to repeat the correct British pronunciation 3 times. If you need more help with the British accent, check the "ACCENT" page of the app.',
+                  extra: ''
+               },
+               {
+                  title: 'Word Comprehension (p 31)',
+                  todo:'Read the reading and check how the words in the Glossary are used in natural English. If you forget the meaning of the words while you read, check the meaning back in the glossary. Use Google Online Dictionary or Longman Dictionary of Contemporary English (latest version) for the unknown words in the text.',
+                  extra: ''
+               },
+               {
+                  title: 'Using The Vocabularies (p 31)',
+                  todo:'Make a good sentence with each word in the Glossary. If you have difficulty understading what to write, check the examples of the word in Google Online Dictionary or Longman Dictionary of Contemporary English (latest version). But try not to copy the exmaple. Instead, try to find an idea by reading the examples.',
+                  extra: ''
+               },
+               {
+                  title: 'Practicing British Accent',
+                  todo: 'Practice reading the text in page 31 in British accent. When you feel you are ready, read each text again aloud and record your voice. Then send your recordings to the teacher before the end of the day to check your mistakes and weaknesses.',
+                  extra: ''
+               }
+            ]
+         },
+         {
+            day: 11,
+            images: ["../images/oxford/int/11a.jpg", "../images/oxford/int/11b.jpg"],
+            book: "Word Skills Intermediate",
+            pages: [32, 33],
+            instructions: [
+               {
+                  title: 'Learning The Glossary (p 32)',
+                  todo:'Read the words, definitions and the synonyms & antonyms (if any) in the Glossary and try to understand their meaning without using English-Persian dictioanry. Use Google Online Dictionary or Longman Dictionary of Contemporary English (latest version).',
+                  extra: ''
+               },
+               {
+                  title: 'Learning Pronunciation (p 32)',
+                  todo:'Check the British phonetic & pronunciation of each Glossary word in the dictionary. Then try to repeat the correct British pronunciation 3 times. If you need more help with the British accent, check the "ACCENT" page of the app.',
+                  extra: ''
+               },
+               {
+                  title: 'Word Comprehension (p 32)',
+                  todo:'Read the reading and check how the words in the Glossary are used in natural English. If you forget the meaning of the words while you read, check the meaning back in the glossary. Use Google Online Dictionary or Longman Dictionary of Contemporary English (latest version) for the unknown words in the text.',
+                  extra: ''
+               },
+               {
+                  title: 'Using The Vocabularies (p 32)',
+                  todo:'Make a good sentence with each word in the Glossary. If you have difficulty understading what to write, check the examples of the word in Google Online Dictionary or Longman Dictionary of Contemporary English (latest version). But try not to copy the exmaple. Instead, try to find an idea by reading the examples.',
+                  extra: ''
+               },
+               {
+                  title: 'Learning The Vocabularies (p 33)',
+                  todo:'Read the words, definitions and the synonyms & antonyms (if any) in the Glossary and try to understand their meaning without using English-Persian dictioanry. Use Google Online Dictionary or Longman Dictionary of Contemporary English (latest version).',
+                  extra: ''
+               },
+               {
+                  title: 'Learning Pronunciation (p 33)',
+                  todo:'Check the British phonetic & pronunciation of each Glossary word in the dictionary. Then try to repeat the correct British pronunciation 3 times. If you need more help with the British accent, check the "ACCENT" page of the app.',
+                  extra: ''
+               },
+               {
+                  title: 'Word Comprehension (p 33)',
+                  todo:'Read the readings and check how the words in the Glossary are used in natural English. If you forget the meaning of the words while you read, check the meaning back in the glossary. Use Google Online Dictionary or Longman Dictionary of Contemporary English (latest version) for the unknown words in the text.',
+                  extra: ''
+               },
+               {
+                  title: 'Using The Vocabularies (p 33)',
+                  todo:'Make a good sentence with each word in the Glossary. If you have difficulty understading what to write, check the examples of the word in Google Online Dictionary or Longman Dictionary of Contemporary English (latest version). But try not to copy the exmaple. Instead, try to find an idea by reading the examples.',
+                  extra: ''
+               },
+               {
+                  title: 'SPOTLIGHT (p 33)',
+                  todo:'Read the spotlight and check the difference between give birth and to be born. Then check the definition and examples for each word in Google Online Dictionary or Longman Dictionary of Contemporary English (latest version) to better understand their differences.',
+                  extra: ''
+               },
+               {
+                  title: 'Practicing British Accent',
+                  todo: 'Practice reading the texts in page 33 in British accent. When you feel you are ready, read each text again aloud and record your voice. Then send your recordings to the teacher before the end of the day to check your mistakes and weaknesses.',
+                  extra: ''
+               }
+            ]
+         },
+         {
+            day: 12,
+            images: ["../images/oxford/int/12a.jpg", "../images/oxford/int/12b.jpg"],
+            book: "Word Skills Intermediate",
+            pages: [34, 35],
+            instructions: [
+               {
+                  title: 'Learning The Glossary (p 34)',
+                  todo:'Read the words, definitions and the synonyms & antonyms (if any) in the Glossary and try to understand their meaning without using English-Persian dictioanry. Use Google Online Dictionary or Longman Dictionary of Contemporary English (latest version).',
+                  extra: ''
+               },
+               {
+                  title: 'Learning Pronunciation (p 34)',
+                  todo:'Check the British phonetic & pronunciation of each Glossary word in the dictionary. Then try to repeat the correct British pronunciation 3 times. If you need more help with the British accent, check the "ACCENT" page of the app.',
+                  extra: ''
+               },
+               {
+                  title: 'Word Comprehension (p 34)',
+                  todo:'Read the reading and check how the words in the Glossary are used in natural English. If you forget the meaning of the words while you read, check the meaning back in the glossary. Use Google Online Dictionary or Longman Dictionary of Contemporary English (latest version) for the unknown words in the text.',
+                  extra: ''
+               },
+               {
+                  title: 'Using The Vocabularies (p 34)',
+                  todo:'Make a good sentence with each word in the Glossary. If you have difficulty understading what to write, check the examples of the word in Google Online Dictionary or Longman Dictionary of Contemporary English (latest version). But try not to copy the exmaple. Instead, try to find an idea by reading the examples.',
+                  extra: ''
+               },
+               {
+                  title: 'Learning The Vocabularies (p 35)',
+                  todo:'Read the words, definitions and the synonyms & antonyms (if any) in the Glossary and try to understand their meaning without using English-Persian dictioanry. Use Google Online Dictionary or Longman Dictionary of Contemporary English (latest version).',
+                  extra: ''
+               },
+               {
+                  title: 'Learning Pronunciation (p 35)',
+                  todo:'Check the British phonetic & pronunciation of each Glossary word in the dictionary. Then try to repeat the correct British pronunciation 3 times. If you need more help with the British accent, check the "ACCENT" page of the app.',
+                  extra: ''
+               },
+               {
+                  title: 'Word Comprehension (p 35)',
+                  todo:'Read the reading and check how the words in the Glossary are used in natural English. If you forget the meaning of the words while you read, check the meaning back in the glossary. Use Google Online Dictionary or Longman Dictionary of Contemporary English (latest version) for the unknown words in the text.',
+                  extra: ''
+               },
+               {
+                  title: 'Using The Vocabularies (p 35)',
+                  todo:'Make a good sentence with each word in the Glossary. If you have difficulty understading what to write, check the examples of the word in Google Online Dictionary or Longman Dictionary of Contemporary English (latest version). But try not to copy the exmaple. Instead, try to find an idea by reading the examples.',
+                  extra: ''
+               },
+               {
+                  title: 'SPOTLIGHT (p 35)',
+                  todo:'Read the spotlight and check the difference between the adjective and verb forms of the word separate. Then check the definition and examples for each word in Google Online Dictionary or Longman Dictionary of Contemporary English (latest version) to better understand their differences.',
+                  extra: ''
+               },
+               {
+                  title: 'Practicing British Accent',
+                  todo: 'Practice reading the text in page 35 in British accent. When you feel you are ready, read each text again aloud and record your voice. Then send your recordings to the teacher before the end of the day to check your mistakes and weaknesses.',
+                  extra: ''
+               }
+            ]
+         },
          // {
          //    day: 13,
          //    images: ["../images/oxford/int/13a.jpg", "../images/oxford/int/13b.jpg"],
@@ -936,10 +1402,9 @@ const StudyPlan = () => {
             alt="background"
          />
          
-
          <div className={styles.holder}>
             <div className={styles.dates}>
-               <div className={styles.date}>Instructions for day {currentDay}: {displayedDate}</div>
+               <div className={styles.date}>Instructions for day {currentDay}: {displayedDate} | today is {persianDate}</div>
                <div className={styles.menuHolder}>
                   <div className={styles.dotHolder} onClick={toggleMenu} ref={optionRef}>
                      <SlOptionsVertical className={styles.hamIcon} />
@@ -1084,6 +1549,7 @@ const StudyPlan = () => {
                </button>
             </div>         
          </div>
+
          {
             warning ?
             <div className={styles.warning}>
