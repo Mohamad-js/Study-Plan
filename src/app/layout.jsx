@@ -1,4 +1,5 @@
 import { StudyPlanProvider } from "@/context/StudyPlanContext"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import "./globals.css";
 
 
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
       <html lang="en">
          <body>
             {children}
+            <SpeedInsights />
          </body>
       </html>
    </StudyPlanProvider>
