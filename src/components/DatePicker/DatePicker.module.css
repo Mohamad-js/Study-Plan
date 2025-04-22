@@ -14,12 +14,18 @@
    
    
    & .calendar {
-      width: 120px;
-      height: 40px;
+      width: 180px;
+      height: 60px;
       border-radius: 10px;
       display: flex;
       text-align: center;
-      font: 15px tahoma;
+      font: 25px tahoma;
       border: none;
+
+      @media (width < 700px){
+         width: 120px;
+         height: 40px;
+         font: 17px tahoma;
+      }
    }
 }

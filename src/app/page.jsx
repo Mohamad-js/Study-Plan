@@ -1405,7 +1405,7 @@ const StudyPlan = () => {
             
             <div className={styles.holder}>
                <div className={styles.dates}>
-                  <div className={styles.date}>Instructions for day {currentDay}: {displayedDate}</div>
+                  <div className={styles.date}>Tasks for day {currentDay}: {displayedDate}</div>
                   <div className={styles.menuHolder}>
                      <div className={styles.dotHolder} onClick={toggleMenu} ref={optionRef}>
                         <SlOptionsVertical className={styles.hamIcon} />
