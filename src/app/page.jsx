@@ -2003,7 +2003,7 @@ const StudyPlan = () => {
    const displayedDate = baseDate.format("jYYYY/jMM/jDD");
 
 
-   if(currentDay < 13){
+   if(currentDay < 23){
       return (
          <div className={styles.bigMom}>
    
@@ -2190,7 +2190,6 @@ const StudyPlan = () => {
             <h2>Data Available Soon</h2>
             <button
                className={styles.btn}
-               disabled={currentDay === 1}
                onClick={() => setCurrentDay(currentDay - 1)}
             >Go Back</button>
          </div>
