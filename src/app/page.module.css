@@ -189,14 +189,7 @@
                display: flex;
                align-items: center;
                justify-content: center;
-
-               @media (390px < width < 700px){
-                  padding: 10px;
-               }
-
-               @media (width < 390px){
-                  padding: 5px;
-               }
+               padding: 10px;
 
 
                & .hamIcon {
